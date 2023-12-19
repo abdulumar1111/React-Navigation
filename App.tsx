@@ -1,12 +1,15 @@
-import React from "react";
-import { Text, View } from "react-native";
+import React from 'react';
+// Navigation
+import {NavigationContainer} from '@react-navigation/native';
+
+import AppRoute from './app/routes/appRoute';
 
 const App = () => {
-  return(
-    <View>
-      <Text>React Native Navigation</Text>
-    </View>
-  )
-}
+  return (
+    <NavigationContainer>
+      <AppRoute />
+    </NavigationContainer>
+  );
+};
 
 export default App;
